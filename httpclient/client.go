@@ -2,7 +2,7 @@ package gohttp
 
 type httpClient struct{}
 
-fun new() HttpClient {
+func new() HttpClient {
 	client := &httpClient{}
 	return client
 }
@@ -18,7 +18,6 @@ type HttpClient interface {
 func (c *httpClient) GET() {
 	response, err := c.Do("GET")
 }
-
 
 func (c *httpClient) Post() {}
 
