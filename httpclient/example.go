@@ -1,14 +1,12 @@
 package go_httpclient
 
 import (
-	"github.com/Alejandro-Rojas/Http-Client"
-	
+	gohttp "github.com/Alejandro-Rojas/Http-Client/httpclient"
 )
 
 func exampleUsage() {
-	client := gohttp.https.Client{}
+	client := gohttp.New()
 
-	client.GET)()
+	client.GET()
 
-	gohttp.GET
 }
